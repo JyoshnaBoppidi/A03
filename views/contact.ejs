@@ -1,0 +1,51 @@
+<% include header %>
+<div>
+    <header class="Header">Contact details</header>
+    <a href="https://www.linkedin.com/in/jyoshna-boppidi-133169136/">click here - redirect to Linkedin<img width="50"
+            height="50" src="/images/Linkedin2.png" alt="Linkedin"> </a><br>
+    <a href="https://www.facebook.com/boppidi.jyoshnareddy">click here - redirect to facebook<img width="50" height="50"
+            src="/images/facebook.png" alt="Facebook"> </a><br>
+    <a href="https://github.com/JyoshnaBoppidi">click here - redirect to github<img width="50" height="50" src="/images/GitHub-Mark.png"
+            alt="GitHUb"></a><br>
+    <a href="https://bitbucket.org/Jyoshna-Boppidi/">click here - redirect to bitbucket<img width="50" height="50" src="/images/bit.png"
+            alt="BitBucket"></a><br>
+    <form method="POST" role="form">
+        <br>
+        <br>
+        firstname:<br>
+
+        <input type="text" name="firstname" pattern="[A-Za-z]*" required>
+        <br>
+        lastname:<br>
+        <input type="text" name="lastname" pattern="[A-Za-z]*" required>
+        <br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female" checked>female <br>
+
+        <textarea name message rows="5" cols="11">
+                Further questions???
+   </textarea>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-6 col-form-label">
+                <p id="email"><strong>Email</strong></p>
+            </label>
+            <div class="col-sm-4">
+                <input type="email" name="email" class="form-contrl" id="inputEmail" placeholder="@gmail.com" pattern="+.gmail.com"
+                    required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputphone" class="col-sm-3 col-form-label">
+                <p id="phone"><strong>Phone No</strong></p>
+            </label>
+            <div class="col-sm-4">
+                <input type="number" name="phone" class="form-contrl" id="inputPhone" placeholder="xxx-xxx-xxxx"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+        </div>
+        <button type="submit" onclick="alert('message sent')">Submit</button>
+
+        <input type="Reset" onvalue="Reset">
+    </form>
+</div>
+<% include footer %>
